@@ -1,10 +1,11 @@
 import './RatingBadge.css';
 
-function RatingBadge() {
+function RatingBadge(promise) {
+
   return (
     <div className="rating-badge">
-      <span className="rating-badge__value">8.3/10</span>
-      <span className="rating-badge__source">Internet Movie Database</span>
+      <span className="rating-badge__value">{promise.rating.Value}</span>
+      <span className="rating-badge__source">{promise.rating.Source}</span>
     </div>
   );
 }
